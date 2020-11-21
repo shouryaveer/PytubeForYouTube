@@ -1,9 +1,8 @@
 # PytubeForYouTube
 This repository shows how you can use Pytube package in Python to download videos from YouTube. Get python installed on your computer &amp; Check out the instructions below to try it yourself:
-1) First install pytube using: 'pip install pytube3' command.
-2) Clone the pytube git repository using: git clone https://github.com/nficano/pytube.git
-3) Embed & install this source code to your pytube package dir by changing your directory using 'cd pytube' & entering 'pip install .'
-4) Next execute the code file "yt.py" in this repo from your IDE or using 'python qr.py' from your terminal
-5) When executed, you'll get a list of stream formats in your output. You can select any stream resolutions
-   from your output by their "itag" & then add it in the blank space between '' in: video.streams.get_by_itag(' ').download()
-6) You can also specify your own download location in .download() function: .download('your-path-directory')
+1) Install python from https://python.org
+2) Install pytube using: "pip install git+https://github.com/nficano/pytube" in the terminal (without the "")
+3) Change directory to PytubeForYouTube using 'cd PytubeForYouTube' and execute the code yt.py using 'python yt.py'.
+5) When executed, you'll get prompted to enter the youtube link to the video you want to download.
+6) After entering the link you'll get a list of 'Streams' available to download. From the list choose the one with progressive=True (to download both video & audio) and get the itag of the chosen stream.
+7) Enter the itag of your chosen stream when prompted. Your video will then start downloading in the D: drive.
